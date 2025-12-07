@@ -1,0 +1,11 @@
+.optionsContainer {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background-color: rgb(228, 226, 226);
+  color: #000;
+  border: 1px solid #444343;
+  border-radius: 5px;
+}

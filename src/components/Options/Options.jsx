@@ -1,10 +1,10 @@
 import styles from './Options.module.css';
-function Options() {
+function Options({ onClick }) {
   return (
     <div className={styles.optionsContainer}>
-      <button>Good</button>
-      <button>Neutral</button>
-      <button>Bad</button>
+      <button onClick={() => onClick("good")}>Good</button>
+      <button onClick={() => onClick("neutral")}>Neutral</button>
+      <button onClick={() => onClick("bad")}>Bad</button>
     </div>
   );
 }

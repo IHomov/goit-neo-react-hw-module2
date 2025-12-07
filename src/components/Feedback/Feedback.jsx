@@ -1,4 +1,4 @@
-function Feedback({ good, neutral, bad, total }) {
+function Feedback({ good, neutral, bad, total, positive }) {
   return (
     <div>
       
@@ -6,6 +6,7 @@ function Feedback({ good, neutral, bad, total }) {
       <p>Neutral: {neutral}</p>
       <p>Bad: {bad}</p>
       <p>Total: {total}</p>
+      <p>Positive: {positive}%</p>
       
     </div>
   );

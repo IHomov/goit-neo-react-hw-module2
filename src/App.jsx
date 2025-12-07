@@ -14,7 +14,8 @@ function App() {
       : { good: 0, neutral: 0, bad: 0 };
   });
 
-const hasFeedback = feedback.good > 0 || feedback.neutral > 0 || feedback.bad > 0;
+  const hasFeedback =
+    feedback.good > 0 || feedback.neutral > 0 || feedback.bad > 0;
 
   useEffect(() => {
     localStorage.setItem("feedback", JSON.stringify(feedback));
@@ -22,12 +23,10 @@ const hasFeedback = feedback.good > 0 || feedback.neutral > 0 || feedback.bad > 
 
   const updateFeedback = (feedbackType) => {
     setFeedback((prevFeedback) => ({
-      
-        ...prevFeedback,
-        [feedbackType]: prevFeedback[feedbackType] + 1,
-      }));
+      ...prevFeedback,
+      [feedbackType]: prevFeedback[feedbackType] + 1,
+    }));
   };
-
 
   const resetFeedback = () => {
     setFeedback({
@@ -35,7 +34,7 @@ const hasFeedback = feedback.good > 0 || feedback.neutral > 0 || feedback.bad > 
       neutral: 0,
       bad: 0,
     });
-    
+
     localStorage.removeItem("feedback");
   };
   const totalVotes = feedback.good + feedback.neutral + feedback.bad;

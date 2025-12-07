@@ -6,6 +6,7 @@ function Feedback({ good, neutral, bad, total }) {
       <p>Neutral: {neutral}</p>
       <p>Bad: {bad}</p>
       <p>Total: {total}</p>
+      
     </div>
   );
 }
